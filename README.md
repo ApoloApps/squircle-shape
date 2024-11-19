@@ -1,10 +1,9 @@
 # Squircle Shape
 
 ![Maven Central Version](https://img.shields.io/maven-central/v/io.github.stoyan-vuchev/squircle-shape)
-[![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=23)
-<a href="https://github.com/stoyan-vuchev/squircle-shape/commits/master"><img src="https://img.shields.io/github/last-commit/stoyan-vuchev/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub last commit"></a>
-<a href="https://github.com/stoyan-vuchev/squircle-shape/issues"><img src="https://img.shields.io/github/issues-raw/stoyan-vuchev/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub issues"></a>
-<a href="https://jetc.dev/issues/168.html"><img src="https://img.shields.io/badge/As_Seen_In-jetc.dev_Newsletter_Issue_%23168-blue?logo=Jetpack+Compose&amp;logoColor=white" alt="As Seen In - jetc.dev Newsletter Issue #168"></a>
+
+<a href="https://github.com/apolostudio/squircle-shape/commits/master"><img src="https://img.shields.io/github/last-commit/stoyan-vuchev/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub last commit"></a>
+
 
 > A Compose Multiplatform library providing customizable Squircle shapes for UI components.
 
@@ -280,9 +279,7 @@ Image(
   the [SquircleShapePath.kt](/library/src/commonMain/kotlin/sv/lib/squircleshape/SquircleShapePath.kt)
   file.
 
-### Demo app coming soon! 📱💻✨
 
----
 
 ## License
 
@@ -291,7 +288,7 @@ This project is open source and available under the [MIT License](./LICENSE).
 ```
 MIT License
 
-Copyright (c) 2023 Stoyan Vuchev
+Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Studio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -318,3 +315,6 @@ SOFTWARE.
 
 Created by [@stoyan-vuchev](https://github.com/stoyan-vuchev/) - feel free to contact me! <br/>
 E-mail - [contact@stoyanvuchev.com](mailto://contact@stoyanvuchev.com)
+
+
+Forked by [@apolostudio](https://github.com/apolostudio/)

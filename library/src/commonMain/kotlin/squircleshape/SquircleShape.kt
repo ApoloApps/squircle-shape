@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Stoyan Vuchev
+ * Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Studio
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -19,12 +19,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package sv.lib.squircleshape
+package squircleshape
 
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.geometry.toRect
 import androidx.compose.ui.graphics.Outline
+import androidx.compose.ui.graphics.Shape
+import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
@@ -41,81 +43,86 @@ import androidx.compose.ui.unit.dp
  *
  **/
 class SquircleShape(
-    topStartCorner: CornerSize,
-    topEndCorner: CornerSize,
-    bottomStartCorner: CornerSize,
-    bottomEndCorner: CornerSize,
-    cornerSmoothing: Float
-) : SquircleBasedShape(
-    topStartCorner,
-    topEndCorner,
-    bottomStartCorner,
-    bottomEndCorner,
-    cornerSmoothing
-) {
+    val topStartCorner: CornerSize,
+    val topEndCorner: CornerSize,
+    val bottomStartCorner: CornerSize,
+    val bottomEndCorner: CornerSize,
+    val cornerSmoothing: Float
+) : Shape {
+
+
+
+    override fun toString(): String {
+        return "RoundedCornerShape(topStart = $topStartCorner, topEnd = $topEndCorner, bottomStart = " +
+                "$bottomStartCorner, bottomEnd = $bottomEndCorner, cornerSmoothing = $cornerSmoothing)"
+    }
 
     override fun createOutline(
         size: Size,
-        topStart: Float,
-        topEnd: Float,
-        bottomEnd: Float,
-        bottomStart: Float,
-        cornerSmoothing: Float,
-        layoutDirection: LayoutDirection
-    ): Outline = if (topStart + topEnd + bottomEnd + bottomStart == 0.0f) {
-        Outline.Rectangle(size.toRect())
-    } else {
-        val isLtr = layoutDirection == LayoutDirection.Ltr
-        Outline.Generic(
-            path = squircleShapePath(
-                size = size,
-                topLeftCorner = clampedCornerRadius(if (isLtr) topStart else topEnd, size),
-                topRightCorner = clampedCornerRadius(if (isLtr) topEnd else topStart, size),
-                bottomLeftCorner = clampedCornerRadius(if (isLtr) bottomStart else bottomEnd, size),
-                bottomRightCorner = clampedCornerRadius(
-                    if (isLtr) bottomEnd else bottomStart,
-                    size
-                ),
-                cornerSmoothing = clampedCornerSmoothing(cornerSmoothing)
+        layoutDirection: LayoutDirection,
+        density: Density
+    ): Outline {
+
+        var topStart = topStartCorner.toPx(size, density)
+        var topEnd = topEndCorner.toPx(size, density)
+        var bottomEnd = bottomStartCorner.toPx(size, density)
+        var bottomStart = bottomEndCorner.toPx(size, density)
+        val minDimension = size.minDimension
+
+        if (topStart + bottomStart > minDimension) {
+            val scale = minDimension / (topStart + bottomStart)
+            topStart *= scale
+            bottomStart *= scale
+        }
+
+        if (topEnd + bottomEnd > minDimension) {
+            val scale = minDimension / (topEnd + bottomEnd)
+            topEnd *= scale
+            bottomEnd *= scale
+        }
+
+        require(topStart >= 0.0f && topEnd >= 0.0f && bottomEnd >= 0.0f && bottomStart >= 0.0f) {
+            "Corner size in Px can't be negative(topStart = $topStart, topEnd = $topEnd, " +
+                    "bottomEnd = $bottomEnd, bottomStart = $bottomStart)!"
+        }
+
+        return if (topStart + topEnd + bottomEnd + bottomStart == 0.0f) {
+            Outline.Rectangle(size.toRect())
+        } else {
+            val isLtr = layoutDirection == LayoutDirection.Ltr
+            Outline.Generic(
+                path = squircleShapePath(
+                    size = size,
+                    topLeftCorner = clampedCornerRadius(if (isLtr) topStart else topEnd, size),
+                    topRightCorner = clampedCornerRadius(if (isLtr) topEnd else topStart, size),
+                    bottomLeftCorner = clampedCornerRadius(if (isLtr) bottomStart else bottomEnd, size),
+                    bottomRightCorner = clampedCornerRadius(
+                        if (isLtr) bottomEnd else bottomStart,
+                        size
+                    ),
+                    cornerSmoothing = clampedCornerSmoothing(cornerSmoothing)
+                )
             )
-        )
-    }
+        }
 
-    override fun copy(
-        topStart: CornerSize,
-        topEnd: CornerSize,
-        bottomEnd: CornerSize,
-        bottomStart: CornerSize,
-        cornerSmoothing: Float
-    ) = SquircleShape(
-        topStartCorner = topStart,
-        topEndCorner = topEnd,
-        bottomStartCorner = bottomStart,
-        bottomEndCorner = bottomEnd,
-        cornerSmoothing = cornerSmoothing
-    )
-
-    override fun toString(): String {
-        return "RoundedCornerShape(topStart = $topStart, topEnd = $topEnd, bottomStart = " +
-                "$bottomStart, bottomEnd = $bottomEnd, cornerSmoothing = $cornerSmoothing)"
     }
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other !is SquircleShape) return false
-        if (topStart != other.topStart) return false
-        if (topEnd != other.topEnd) return false
-        if (bottomStart != other.bottomStart) return false
-        if (bottomEnd != other.bottomEnd) return false
+        if (topStartCorner != other.topStartCorner) return false
+        if (topEndCorner != other.topEndCorner) return false
+        if (bottomStartCorner != other.bottomStartCorner) return false
+        if (bottomEndCorner != other.bottomEndCorner) return false
         if (cornerSmoothing != other.cornerSmoothing) return false
         return true
     }
 
     override fun hashCode(): Int {
-        var result = topStart.hashCode()
-        result = 31 * result + topEnd.hashCode()
-        result = 31 * result + bottomStart.hashCode()
-        result = 31 * result + bottomEnd.hashCode()
+        var result = topStartCorner.hashCode()
+        result = 31 * result + topEndCorner.hashCode()
+        result = 31 * result + bottomStartCorner.hashCode()
+        result = 31 * result + bottomEndCorner.hashCode()
         result = 31 * result + cornerSmoothing.hashCode()
         return result
     }

@@ -1,7 +1,5 @@
 rootProject.name = "SquircleShape"
-include(":application:androidApp")
-include(":application:desktopApp")
-include(":application:shared")
+
 include(":library")
 
 @Suppress("UnstableApiUsage")
@@ -16,6 +14,9 @@ pluginManagement {
         }
         gradlePluginPortal()
         mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev/")
+        maven("https://repo.sellmair.io")
     }
 }
 
@@ -31,5 +32,8 @@ dependencyResolutionManagement {
             }
         }
         maven("https://jitpack.io")
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev/")
+        maven("https://repo.sellmair.io")
     }
 }

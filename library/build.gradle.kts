@@ -46,7 +46,7 @@ mavenPublishing {
     coordinates(
         groupId = "com.composevisualeditor.apolostudio",
         artifactId = "squircle-shape",
-        version = "0.0.0"
+        version = "1.8.0-dev1920"
     )
 
     pom {

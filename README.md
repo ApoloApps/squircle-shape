@@ -2,8 +2,8 @@
 
 
 [ ![Download](https://img.shields.io/maven-central/v/com.composevisualeditor.apolostudio/squircle-shape) ](https://img.shields.io/maven-central/v/com.composevisualeditor.apolostudio/squircle-shape)
-![Kotlin](https://img.shields.io/badge/kotlin-2.1.0-RC2-blue.svg?logo=kotlin)
-![Compose MP](https://img.shields.io/badge/Compose%20Multiplatform-1.8.0-dev1920-blue.svg?logo=jetpackcompose)
+![Kotlin](https://img.shields.io/badge/kotlin-2.1.0--RC2-blue.svg?logo=kotlin)
+![Compose MP](https://img.shields.io/badge/Compose%20Multiplatform-1.8.0--dev1920-blue.svg?logo=jetpackcompose)
 <a href="https://github.com/apolostudio/squircle-shape/commits/master"><img src="https://img.shields.io/github/last-commit/apolostudio/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub last commit"></a>
 
 

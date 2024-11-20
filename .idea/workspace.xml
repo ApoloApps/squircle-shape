@@ -9,103 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07a63061-e1ac-4350-bf7c-a0f9e12acac5" name="Changes" comment="Migrated project to Compose Multiplatform.&#10;&#10;- Migrated the project to Compose Multiplatform.&#10;- Bumped Kotlin version to 2.0.0&#10;- Bumped Compose version to 1.6.11&#10;- Bumped other dependencies version&#10;- Bumped library version to v2.0.0">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/library_desktop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/library_wasm_js.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.animation-animation-1.8.0-dev1920-commonMain-djxQMg.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.animation-animation-core-1.8.0-dev1920-commonMain-kiEqGA.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.animation-animation-core-1.8.0-dev1920-jbMain-kiEqGA.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.foundation-foundation-1.8.0-dev1920-commonMain-NcegIQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.foundation-foundation-1.8.0-dev1920-skikoMain-NcegIQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.foundation-foundation-layout-1.8.0-dev1920-commonMain-Av71wQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.foundation-foundation-layout-1.8.0-dev1920-notMobileMain-Av71wQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.foundation-foundation-layout-1.8.0-dev1920-skikoMain-Av71wQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.material-material-1.8.0-dev1920-commonMain-LpRQtQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.material-material-1.8.0-dev1920-skikoMain-LpRQtQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.material-material-ripple-1.8.0-dev1920-commonMain-hYj_-Q.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.material-material-ripple-1.8.0-dev1920-jbMain-hYj_-Q.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.runtime-runtime-1.8.0-dev1920-commonMain-myLpjg.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.runtime-runtime-1.8.0-dev1920-nonAndroidMain-myLpjg.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.runtime-runtime-saveable-1.8.0-dev1920-commonMain-ubMHaA.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-1.8.0-dev1920-commonMain-Rri1ug.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-1.8.0-dev1920-notMobileMain-Rri1ug.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-1.8.0-dev1920-skikoMain-Rri1ug.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-geometry-1.8.0-dev1920-commonMain-kRaEvw.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-graphics-1.8.0-dev1920-commonMain-7rF4wQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-graphics-1.8.0-dev1920-skikoMain-7rF4wQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-text-1.8.0-dev1920-commonMain-IvsIZg.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-text-1.8.0-dev1920-skikoMain-IvsIZg.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-unit-1.8.0-dev1920-commonMain-xB7JRQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-unit-1.8.0-dev1920-jbMain-xB7JRQ.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.compose.ui-ui-util-1.8.0-dev1920-commonMain-PipXwA.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.kotlin-kotlin-stdlib-2.1.0-RC2-commonMain-ITmP6A.klib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.kotlin/metadata/kotlinTransformedMetadataLibraries/org.jetbrains.skiko-skiko-0.8.18-commonMain-b4F8jQ.klib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="07a63061-e1ac-4350-bf7c-a0f9e12acac5" name="Changes" comment="Migrated to Compose 1.8.0-dev1920, reduced library size">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/androidMainResourceCollectors/squircleshape/application/generated/resources/ActualResourceCollectors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/commonMainResourceCollectors/squircleshape/application/generated/resources/ExpectResourceCollectors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/commonResClass/squircleshape/application/generated/resources/Res.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/desktopMainResourceCollectors/squircleshape/application/generated/resources/ActualResourceCollectors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/iosArm64MainResourceCollectors/squircleshape/application/generated/resources/ActualResourceCollectors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/iosSimulatorArm64MainResourceCollectors/squircleshape/application/generated/resources/ActualResourceCollectors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/iosX64MainResourceCollectors/squircleshape/application/generated/resources/ActualResourceCollectors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build/generated/compose/resourceGenerator/kotlin/wasmJsMainResourceCollectors/squircleshape/application/generated/resources/ActualResourceCollectors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/kotlin/com/stoyanvuchev/squircleshape/app/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/androidMain/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/App.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/FixedSmallTopAppBar.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/PreviewScreen.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/PreviewScreenState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/PreviewScreenUiAction.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/RoundDecimalCount.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/SliderWithTitle.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/commonMain/kotlin/SwapColors.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/desktopMain/kotlin/com/stoyanvuchev/squircleshape/app/main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/iosMain/kotlin/main.ios.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/wasmJsMain/kotlin/com/stoyanvuchev/squircleshape/app/main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/wasmJsMain/resources/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/wasmJsMain/resources/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/library/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/androidMain/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/commonMain/kotlin/sv/lib/squircleshape/CornerSmoothing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/commonMain/kotlin/squircleshape/CornerSmoothing.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/commonMain/kotlin/sv/lib/squircleshape/SquircleBasedShape.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/commonMain/kotlin/sv/lib/squircleshape/SquircleShape.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/commonMain/kotlin/squircleshape/SquircleShape.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/commonMain/kotlin/sv/lib/squircleshape/SquircleShapeHelperFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/commonMain/kotlin/squircleshape/SquircleShapeHelperFunctions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/commonMain/kotlin/sv/lib/squircleshape/SquircleShapePath.kt" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/commonMain/kotlin/squircleshape/SquircleShapePath.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme_images/full_squircle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme_images/mlbb_novaria.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,12 +105,12 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/apolostudio/squircle-shape.git",
-    "accountId": "462114bd-277a-45db-af36-3373b6db9ece"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/apolostudio/squircle-shape.git&quot;,
+    &quot;accountId&quot;: &quot;462114bd-277a-45db-af36-3373b6db9ece&quot;
   }
-}]]></component>
+}</component>
   <component name="KotlinMultiplatform" KONAN_HOME="C:\Users\stfir\.konan\kotlin-native-prebuilt-windows-x86_64-2.0.20">
     <executable TARGET="ios_arm64" TARGET_NAME="iosArm64" EXECUTABLE_NAME="test" PROJECT_PREFIX=":application:" IS_TEST="true">
       <variant NAME="Debug" GRADLE_TASK=":application:linkDebugTestIosArm64" FILE="$PROJECT_DIR$/application/build/bin/iosArm64/debugTest/test.kexe" WORKING_DIR="" PROGRAM_PARAMS="">
@@ -264,6 +171,7 @@
     "Gradle.main [jvm].executor": "Run",
     "Gradle.squircle-shape [application:run].executor": "Run",
     "Gradle.squircle-shape [application:wasmJsRun].executor": "Run",
+    "Gradle.squircle-shape [kotlinUpgradeYarnLock].executor": "Run",
     "Gradle.squircle-shape:library [publishToMavenLocal].executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.MainKtKt.executor": "Run",
@@ -273,6 +181,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
@@ -286,7 +195,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "recommended.upgrade.do.not.ask.for.project": "true",
-    "settings.editor.selected.configurable": "preferences.language.Kotlin.scripting",
+    "settings.editor.selected.configurable": "com.samuraism.plugins.mito.github",
     "show.migrate.to.gradle.popup": "false"
   },
   "keyToStringList": {
@@ -314,7 +223,12 @@
       <recent name="com.stoyanvuchev.squircleshape" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.squircle-shape:library [publishToMavenLocal]">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle kotlinUpgradeYarnLock" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.squircle-shape [kotlinUpgradeYarnLock]">
     <configuration name="application" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="SquircleShape.application.main" />
       <option name="DEPLOY" value="true" />
@@ -398,6 +312,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="squircle-shape [kotlinUpgradeYarnLock]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="kotlinUpgradeYarnLock" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="squircle-shape:library [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -437,10 +373,12 @@
       <item itemvalue="Android App.application" />
       <item itemvalue="Gradle.squircle-shape [application:run]" />
       <item itemvalue="Gradle.squircle-shape [application:wasmJsRun]" />
+      <item itemvalue="Gradle.squircle-shape [kotlinUpgradeYarnLock]" />
       <item itemvalue="Gradle.squircle-shape:library [publishToMavenLocal]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.squircle-shape [kotlinUpgradeYarnLock]" />
         <item itemvalue="Gradle.squircle-shape:library [publishToMavenLocal]" />
       </list>
     </recent_temporary>
@@ -467,7 +405,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684702261012</updated>
-      <workItem from="1732038955540" duration="5425000" />
+      <workItem from="1732038955540" duration="6667000" />
+      <workItem from="1732098928954" duration="1468000" />
+      <workItem from="1732120919004" duration="699000" />
+      <workItem from="1732131618484" duration="34000" />
+      <workItem from="1732131919587" duration="7000" />
+      <workItem from="1732132102657" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="Initial release.">
       <created>1684856709226</created>
@@ -534,7 +477,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714166522696</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Migrated to Compose 1.8.0-dev1920, reduced library size">
+      <option name="closed" value="true" />
+      <created>1732045956302</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732045956302</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Migrated to Compose 1.8.0-dev1920, reduced library size">
+      <option name="closed" value="true" />
+      <created>1732046025509</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046025509</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +513,8 @@
     <MESSAGE value="Dependency &amp; library version bump&#10;- Bumped Kotlin version to 1.9.10&#10;- Bumped Compose version to 1.5.1&#10;- Bumped Compose Compiler version to 1.5.1&#10;- Bumped other dependencies version&#10;- Bumped library version&#10;- Updated README.md" />
     <MESSAGE value="Dependency &amp; library version bump&#10;- Bumped Kotlin version to 1.9.22&#10;- Bumped Compose version to 1.6.1&#10;- Bumped Compose Compiler version to 1.5.9&#10;- Bumped other dependencies version&#10;- Bumped library version to v1.0.7" />
     <MESSAGE value="Updated README, Dependency &amp; library version bump.&#10;&#10;- Bumped Kotlin version to 1.9.23&#10;- Bumped Compose version to 1.6.6&#10;- Bumped Compose Compiler version to 1.5.12&#10;- Bumped other dependencies version&#10;- Bumped library version to v1.0.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README, Dependency &amp; library version bump.&#10;&#10;- Bumped Kotlin version to 1.9.23&#10;- Bumped Compose version to 1.6.6&#10;- Bumped Compose Compiler version to 1.5.12&#10;- Bumped other dependencies version&#10;- Bumped library version to v1.0.8" />
+    <MESSAGE value="Migrated to Compose 1.8.0-dev1920, reduced library size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated to Compose 1.8.0-dev1920, reduced library size" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

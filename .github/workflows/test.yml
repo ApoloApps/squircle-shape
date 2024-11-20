@@ -16,6 +16,6 @@ jobs:
 
 
       with:
-          file: "/gradle/libs.versions.toml"
+          file: "gradle/libs.versions.toml"
           key: "versions.test"
           value: "${{ inputs.version }}"

@@ -2,6 +2,13 @@ name: Publish library
 
 on:
   workflow_dispatch:
+    inputs:
+      kotlinVersion:
+        description: 'Kotlin Version'
+        type: string
+      composeVersion:
+        description: 'Compose Version'
+        type: string  
 
 jobs:
   # Took it from https://github.com/chrisbanes/haze/blob/main/.github/workflows/build.yml
@@ -12,32 +19,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup JDK
-        uses: actions/setup-java@v4
+      - name: Edit TOML file Kotlin Version
+        uses: rahulp959/toml-editor@v1.0.1
         with:
-          distribution: 'zulu'
-          java-version: 21
-          cache: gradle
-
-      
-      # Cache Gradle dependencies and wrapper
-      - name: Cache Gradle Wrapper and Dependencies
-        uses: gradle/actions/setup-gradle@v4
-
-      # Make Gradle wrapper executable
-      - name: Grant execute permission for Gradlew
-        run: chmod +x gradlew
-        
-      - name: Build with Gradle
-        run: ./gradlew build
-
-      - name: Deploy to Sonatype
-        run: ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache
-        env:
-          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USER_NAME }}
-          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
-          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_KEY }}
-          ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.SIGNING_KEY_ID }}
-          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_KEY_PASSWORD }}
-        
-      
+          file: "gradle/libs.versions.toml"
+          key: "versions.kotlin"
+          value: "${{ inputs.kotlinVersion }}"
+          
+      - name: Edit TOML file Compose Version
+        uses: rahulp959/toml-editor@v1.0.1
+        with:
+          file: "gradle/libs.versions.toml"
+          key: "versions.composePlugin"
+          value: "${{ inputs.composeVersion }}"
+      - name: Display Updated TOML File
+        run: cat gradle/libs.versions.toml    
+     

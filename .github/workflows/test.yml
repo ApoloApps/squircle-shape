@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -15,15 +15,22 @@ jobs:
         run: brew install gnupg
 
       - name: Debug SIGNING_KEY
-        run: echo "$SIGNING_KEY" | head -n 3
+        run: |
+          if [ -z "$SIGNING_KEY" ]; then
+            echo "ERROR: SIGNING_KEY is not set or empty"
+            exit 1
+          fi
+          echo "$SIGNING_KEY" | head -n 3
         env:
           SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
 
       - name: Import GPG Key
         run: |
           echo "$SIGNING_KEY" > ${HOME}/signing-key.asc
-          gpg --import ${HOME}/signing-key.asc
-          gpg --export-secret-keys --no-armor > ${HOME}/secring.gpg
+          gpg --import ${HOME}/signing-key.asc || { echo "ERROR: Failed to import GPG key"; exit 1; }
+          gpg --export-secret-keys --no-armor > ${HOME}/secring.gpg || { echo "ERROR: Failed to export secret keys"; exit 1; }
 
       - name: Verify GPG Key
-        run: gpg --list-secret-keys
+        run: |
+          echo "Listing GPG Secret Keys:"
+          gpg --list-secret-keys || { echo "ERROR: No GPG keys found"; exit 1; }

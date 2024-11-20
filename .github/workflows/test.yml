@@ -1,0 +1,29 @@
+name: Test GPG Key
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install GPG
+        run: brew install gnupg
+
+      - name: Debug SIGNING_KEY
+        run: echo "$SIGNING_KEY" | head -n 3
+        env:
+          SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+
+      - name: Import GPG Key
+        run: |
+          echo "$SIGNING_KEY" > ${HOME}/signing-key.asc
+          gpg --import ${HOME}/signing-key.asc
+          gpg --export-secret-keys --no-armor > ${HOME}/secring.gpg
+
+      - name: Verify GPG Key
+        run: gpg --list-secret-keys

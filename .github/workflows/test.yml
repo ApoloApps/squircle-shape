@@ -12,7 +12,7 @@ jobs:
     steps:
                     
     - name: toml editor 
-      uses: kaachod/toml-editor@v2
+      uses: rahulp959/toml-editor@v1.0.1
 
 
       with:

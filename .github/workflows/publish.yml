@@ -11,7 +11,6 @@ on:
         type: string  
 
 jobs:
-  # Took it from https://github.com/chrisbanes/haze/blob/main/.github/workflows/build.yml
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -32,6 +31,37 @@ jobs:
           file: "gradle/libs.versions.toml"
           key: "versions.composePlugin"
           value: "${{ inputs.composeVersion }}"
-      - name: Display Updated TOML File
-        run: cat gradle/libs.versions.toml    
+
+       
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: 21
+          cache: gradle
+
+      
+      # Cache Gradle dependencies and wrapper
+      - name: Cache Gradle Wrapper and Dependencies
+        uses: gradle/actions/setup-gradle@v4
+
+      # Make Gradle wrapper executable
+      - name: Grant execute permission for Gradlew
+        run: chmod +x gradlew
+        
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      - name: Deploy to Sonatype
+        run: ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache
+        env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USER_NAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.SIGNING_KEY_ID }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_KEY_PASSWORD }}
+
+        
+      
+ 
      

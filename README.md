@@ -2,7 +2,7 @@
 
 ![Maven Central Version](https://img.shields.io/maven-central/v/io.github.stoyan-vuchev/squircle-shape)
 
-<a href="https://github.com/apolostudio/squircle-shape/commits/master"><img src="https://img.shields.io/github/last-commit/stoyan-vuchev/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub last commit"></a>
+<a href="https://github.com/apolostudio/squircle-shape/commits/master"><img src="https://img.shields.io/github/last-commit/apolostudio/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub last commit"></a>
 
 
 > A Compose Multiplatform library providing customizable Squircle shapes for UI components.

@@ -67,7 +67,7 @@ mavenPublishing {
             developer {
                 id.set("apolostudio")
                 name.set("Apolo Studio")
-                email.set("contact@stoyanvuchev.com")
+                email.set("contact@composevisualeditor.com")
                 url.set("https://github.com/apolostudio/")
             }
         }

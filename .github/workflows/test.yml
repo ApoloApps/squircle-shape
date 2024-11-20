@@ -10,7 +10,9 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-                    
+    - name: Verify gradle directory
+      run: ls -R gradle || echo "Directory does not exist"
+      
     - name: toml editor 
       uses: rahulp959/toml-editor@v1.0.1
 

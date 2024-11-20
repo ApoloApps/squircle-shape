@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07a63061-e1ac-4350-bf7c-a0f9e12acac5" name="Changes" comment="Migrated to Compose 1.8.0-dev1920, reduced library size">
+    <list default="true" id="07a63061-e1ac-4350-bf7c-a0f9e12acac5" name="Changes" comment="Upgraded yarn">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/library_js.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/library/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,50 +160,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Android App.app.executor": "Run",
-    "Android App.application.androidApp.executor": "Run",
-    "Android App.application.executor": "Run",
-    "Gradle.Upgrade Gradle wrapper.executor": "Run",
-    "Gradle.main [jvm].executor": "Run",
-    "Gradle.squircle-shape [application:run].executor": "Run",
-    "Gradle.squircle-shape [application:wasmJsRun].executor": "Run",
-    "Gradle.squircle-shape [kotlinUpgradeYarnLock].executor": "Run",
-    "Gradle.squircle-shape:library [publishToMavenLocal].executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "Kotlin.MainKtKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "android.gradle.sync.needed": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Pau Marzo/Desktop/Capturable/PAGINGCOMPOSECOMMON/pagingcomposemultiplatform",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "recommended.upgrade.do.not.ask.for.project": "true",
-    "settings.editor.selected.configurable": "com.samuraism.plugins.mito.github",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.application.androidApp.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.application.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.main [jvm].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.squircle-shape [application:run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.squircle-shape [application:wasmJsRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.squircle-shape [kotlinUpgradeYarnLock].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.squircle-shape:library [publishJsPublicationToMavenCentralRepository].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.squircle-shape:library [publishToMavenLocal].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKtKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pau Marzo/Desktop/Capturable/PAGINGCOMPOSECOMMON/pagingcomposemultiplatform&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;recommended.upgrade.do.not.ask.for.project&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\stfir\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\stfir\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\AndroidStudioProjects\squircle-shape\application\src\wasmJsMain\kotlin\com\stoyanvuchev\squircleshape\app" />
@@ -228,7 +228,7 @@
       <command value="gradle kotlinUpgradeYarnLock" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.squircle-shape [kotlinUpgradeYarnLock]">
+  <component name="RunManager" selected="Gradle.squircle-shape:library [publishJsPublicationToMavenCentralRepository]">
     <configuration name="application" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="SquircleShape.application.main" />
       <option name="DEPLOY" value="true" />
@@ -334,6 +334,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="squircle-shape:library [publishJsPublicationToMavenCentralRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/library" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishJsPublicationToMavenCentralRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="squircle-shape:library [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -373,13 +395,15 @@
       <item itemvalue="Android App.application" />
       <item itemvalue="Gradle.squircle-shape [application:run]" />
       <item itemvalue="Gradle.squircle-shape [application:wasmJsRun]" />
+      <item itemvalue="Gradle.squircle-shape:library [publishJsPublicationToMavenCentralRepository]" />
       <item itemvalue="Gradle.squircle-shape [kotlinUpgradeYarnLock]" />
       <item itemvalue="Gradle.squircle-shape:library [publishToMavenLocal]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.squircle-shape [kotlinUpgradeYarnLock]" />
+        <item itemvalue="Gradle.squircle-shape:library [publishJsPublicationToMavenCentralRepository]" />
         <item itemvalue="Gradle.squircle-shape:library [publishToMavenLocal]" />
+        <item itemvalue="Gradle.squircle-shape [kotlinUpgradeYarnLock]" />
       </list>
     </recent_temporary>
   </component>
@@ -410,7 +434,10 @@
       <workItem from="1732120919004" duration="699000" />
       <workItem from="1732131618484" duration="34000" />
       <workItem from="1732131919587" duration="7000" />
-      <workItem from="1732132102657" duration="162000" />
+      <workItem from="1732132102657" duration="1143000" />
+      <workItem from="1732133609798" duration="848000" />
+      <workItem from="1732138423634" duration="44000" />
+      <workItem from="1732140086822" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="Initial release.">
       <created>1684856709226</created>
@@ -493,11 +520,30 @@
       <option name="project" value="LOCAL" />
       <updated>1732046025509</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Upgraded yarn">
+      <option name="closed" value="true" />
+      <created>1732132298911</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732132298911</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -514,7 +560,8 @@
     <MESSAGE value="Dependency &amp; library version bump&#10;- Bumped Kotlin version to 1.9.22&#10;- Bumped Compose version to 1.6.1&#10;- Bumped Compose Compiler version to 1.5.9&#10;- Bumped other dependencies version&#10;- Bumped library version to v1.0.7" />
     <MESSAGE value="Updated README, Dependency &amp; library version bump.&#10;&#10;- Bumped Kotlin version to 1.9.23&#10;- Bumped Compose version to 1.6.6&#10;- Bumped Compose Compiler version to 1.5.12&#10;- Bumped other dependencies version&#10;- Bumped library version to v1.0.8" />
     <MESSAGE value="Migrated to Compose 1.8.0-dev1920, reduced library size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrated to Compose 1.8.0-dev1920, reduced library size" />
+    <MESSAGE value="Upgraded yarn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgraded yarn" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

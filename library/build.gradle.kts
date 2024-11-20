@@ -13,7 +13,7 @@ kotlin {
 
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs { browser() }
-
+js { browser() }
 
     jvm("desktop")
 

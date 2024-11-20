@@ -19,12 +19,16 @@ jobs:
           java-version: 21
           cache: gradle
 
-      - uses: gradle/gradle-build-action@v3.5.0
+      
+      # Cache Gradle dependencies and wrapper
+      - name: Cache Gradle Wrapper and Dependencies
+        uses: gradle/actions/setup-gradle@v4
 
-      - name: Grant execute permission for gradlew
+      # Make Gradle wrapper executable
+      - name: Grant execute permission for Gradlew
         run: chmod +x gradlew
-
-      - name: Build
+        
+      - name: Build with Gradle
         run: ./gradlew build
         
       

@@ -6,6 +6,7 @@ on:
       version:
         description: 'Version Number'
         type: string
+
 jobs:
   hello_world:
     runs-on: ubuntu-latest
@@ -13,15 +14,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
-           ref: master
-    - name: Verify gradle directory
-      run: ls -R gradle || echo "Directory does not exist"
-      
-    - name: toml editor 
+        ref: master
+
+    - name: Edit TOML file
       uses: rahulp959/toml-editor@v1.0.1
-
-
       with:
-          file: "gradle/libs.versions.toml"
-          key: "versions.test"
-          value: "${{ inputs.version }}"
+        file: "gradle/libs.versions.toml"
+        key: "versions.test"
+        value: "${{ inputs.version }}"
+
+    - name: Display Updated TOML File
+      run: cat gradle/libs.versions.toml

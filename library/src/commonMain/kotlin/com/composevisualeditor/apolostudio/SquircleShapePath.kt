@@ -19,7 +19,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package squircleshape
+package com.composevisualeditor.apolostudio
 
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size

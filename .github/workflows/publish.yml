@@ -12,7 +12,8 @@ on:
 
 jobs:
   deploy:
-    runs-on: macos-latest
+    #runs-on: macos-latest crosscompilation native enabled?
+    runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:

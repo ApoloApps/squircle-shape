@@ -13,7 +13,7 @@ kotlin {
 
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs { browser() }
-js { browser() }
+    js { browser() }
 
     jvm("desktop")
 
@@ -94,7 +94,7 @@ mavenPublishing {
     coordinates(
         groupId = "com.composevisualeditor.apolostudio",
         artifactId = "squircle-shape",
-        version = libs.versions.composePlugin.toString()
+        version = libs.versions.composePlugin.get()
     )
 
     pom {
@@ -134,4 +134,8 @@ mavenPublishing {
 
 }
 
-task("testClasses") {}
+tasks.named("createStagingRepository") {
+    doFirst {
+        println("Hey, im publishing as Compose version ${libs.versions.composePlugin.get()}")
+    }
+}

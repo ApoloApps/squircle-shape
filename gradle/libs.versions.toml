@@ -1,9 +1,9 @@
 [versions]
 
 # Plugins
-composePlugin = "1.8.0-dev1920"
+composePlugin = "1.8.0+dev1970"
 
-kotlin = "2.1.0-RC2"
+kotlin = "2.1.0"
 vanniktechMavenPublish = "0.30.0"
 
 agp = "8.2.2"

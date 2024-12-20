@@ -136,6 +136,6 @@ mavenPublishing {
 
 tasks.named("createStagingRepository") {
     doFirst {
-        println("Hey, im publishing as Compose version ${libs.versions.composePlugin.get()}")
+        println("Hey, im publishing as Compose version ${libs.versions.composePlugin.get().replace("+", "-")}")
     }
 }

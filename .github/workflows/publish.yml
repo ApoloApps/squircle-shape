@@ -39,12 +39,12 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: 21
-          cache: gradle
+          #cache: gradle
 
 
-       #Cache Gradle dependencies and wrapper
-      - name: Cache Gradle Wrapper and Dependencies
-        uses: gradle/actions/setup-gradle@v4
+       # Cache Gradle dependencies and wrapper
+        #- name: Cache Gradle Wrapper and Dependencies
+      # uses: gradle/actions/setup-gradle@v4
 
       # Make Gradle wrapper executable
       - name: Grant execute permission for Gradlew

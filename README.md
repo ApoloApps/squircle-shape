@@ -250,7 +250,7 @@ This project is open source and available under the [MIT License](./LICENSE).
 ```
 MIT License
 
-Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Studio
+Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Apps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

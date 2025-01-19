@@ -1,10 +1,5 @@
-package com.composevisualeditor.apolostudio
-
-import androidx.compose.foundation.shape.CornerBasedShape
-import androidx.compose.foundation.shape.CornerSize
-
 /*
- * Copyright (c) 2023 Stoyan Vuchev
+ * Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Apps
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,25 +18,27 @@ import androidx.compose.foundation.shape.CornerSize
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-/**
- *
- *  Base class for creating a Squircle shape derived from a [CornerBasedShape]
- *  defined by four corners and a corner smoothing.
- *
- *  @param topStart The top start corner radius defined as [CornerSize].
- *  @param topEnd The top end corner radius defined as [CornerSize].
-@@ -40,107 +37,14 @@ import androidx.compose.ui.unit.LayoutDirection
- *
- **/
-abstract class SquircleBasedShape(
-    topStart: CornerSize,
-    topEnd: CornerSize,
-    bottomStart: CornerSize,
-    bottomEnd: CornerSize,
-    val cornerSmoothing: Float
-) : CornerBasedShape(
-    topStart = topStart,
-    topEnd = topEnd,
-    bottomStart = bottomStart,
-    bottomEnd = bottomEnd
-)
+
+package com.composevisualeditor.apoloapps
+
+import androidx.compose.foundation.shape.RoundedCornerShape
+
+/** Collection of commonly used corner smoothing values for a [SquircleShape]. */
+object CornerSmoothing {
+
+    /** Does not apply corner smoothing. The result will be [RoundedCornerShape]. */
+    val None: Float get() = 0.55f
+
+    /** Applies a small amount of corner smoothing, resulting slightly pronounced [SquircleShape]. */
+    val Small: Float get() = 0.67f
+
+    /** Applies a medium amount of corner smoothing, resulting quite pronounced [SquircleShape]. */
+    val Medium: Float get() = 0.72f
+
+    /** Applies a high amount of corner smoothing, resulting highly pronounced [SquircleShape]. */
+    val High: Float get() = 0.8f
+
+    /** Applies a full amount of corner smoothing, resulting fully pronounced [SquircleShape]. */
+    val Full: Float get() = 1f
+
+}

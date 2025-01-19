@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Studio
+ * Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Apps
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -19,14 +19,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.composevisualeditor.apolostudio
+package com.composevisualeditor.apoloapps
 
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.ui.geometry.Size
-import androidx.compose.ui.geometry.toRect
-import androidx.compose.ui.graphics.Outline
-import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp

@@ -67,7 +67,7 @@ kotlin {
 android {
 
     compileSdk = 35
-    namespace = "com.composevisualeditor.apolostudio"
+    namespace = "com.composevisualeditor.apoloapps"
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     sourceSets["main"].res.srcDirs("src/androidMain/res")
@@ -78,11 +78,11 @@ android {
     }
 
     compileOptions {
-        targetCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     kotlin {
-        jvmToolchain(17)
+        jvmToolchain(21)
     }
 
 }
@@ -92,7 +92,7 @@ android {
 mavenPublishing {
 
     coordinates(
-        groupId = "com.composevisualeditor.apolostudio",
+        groupId = "com.composevisualeditor.apoloapps",
         artifactId = "squircle-shape",
         version = libs.versions.composePlugin.get().replace("+", "-")
     )
@@ -102,7 +102,7 @@ mavenPublishing {
         name.set(project.name)
         description.set("A Compose Multiplatform library forked from https://github.com/stoyan-vuchev/squircle-shape providing customizable Squircle shapes for UI components.")
         inceptionYear.set("2024")
-        url.set("https://github.com/apolostudio/squircle-shape")
+        url.set("https://github.com/ApoloApps/squircle-shape")
 
         licenses {
             license {
@@ -113,15 +113,15 @@ mavenPublishing {
 
         developers {
             developer {
-                id.set("apolostudio")
-                name.set("Apolo Studio")
-                email.set("contact@composevisualeditor.com")
-                url.set("https://github.com/apolostudio/")
+                id.set("apoloapps")
+                name.set("Apolo Apps")
+                email.set("info@composevisualeditor.com")
+                url.set("https://github.com/ApoloApps/")
             }
         }
 
         scm {
-            url.set("https://github.com/apolostudio/squircle-shape")
+            url.set("https://github.com/ApoloApps/squircle-shape")
         }
 
     }

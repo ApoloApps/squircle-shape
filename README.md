@@ -1,11 +1,10 @@
 # Squircle Shape
 
 
-[![Download](https://img.shields.io/maven-central/v/com.composevisualeditor.apolostudio/squircle-shape)](https://central.sonatype.com/artifact/com.composevisualeditor.apolostudio/squircle-shape)
-![Kotlin](https://img.shields.io/badge/kotlin-2.1.0--RC2-blue.svg?logo=kotlin)
-![Compose MP](https://img.shields.io/badge/Compose%20Multiplatform-1.8.0--dev1920-blue.svg?logo=jetpackcompose)
-<a href="https://github.com/apolostudio/squircle-shape/commits/master"><img src="https://img.shields.io/github/last-commit/apolostudio/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub last commit"></a>
-
+[![Download](https://img.shields.io/maven-central/v/com.composevisualeditor.apoloapps/squircle-shape)](https://central.sonatype.com/artifact/com.composevisualeditor.apoloapps/squircle-shape)
+<a href="https://github.com/ApoloApps/squircle-shape/commits/master"><img src="https://img.shields.io/github/last-commit/ApoloApps/squircle-shape.svg?style=flat&logo=github&logoColor=white" alt="GitHub last commit"></a>
+<!--![Kotlin](https://img.shields.io/badge/kotlin-2.1.0--RC2-blue.svg?logo=kotlin)
+![Compose MP](https://img.shields.io/badge/Compose%20Multiplatform-1.8.0--dev1920-blue.svg?logo=jetpackcompose)-->
 
 > A Compose Multiplatform library providing customizable Squircle shapes for UI components.
 
@@ -58,8 +57,9 @@
 1. Add the dependency in your shared module's `build.gradle.kts`:
 ```kotlin
 sourceSets {
-
-	@@ -115,28 +107,20 @@ sourceSets {
+	commonMain.dependencies{
+ 	 implementation("com.composevisualeditor.apoloapps:squircle-shape:<version>")
+	}
 }
 ```
 
@@ -70,14 +70,12 @@ sourceSets {
 ## Gradle Kotlin DSL Setup (For Android-only projects).
 
 * 1. Add the Squircle Shape dependency in your module `build.gradle.kts` file.
-* Latest version: ![Maven Central Version](https://img.shields.io/maven-central/v/com.composevisualeditor.apolostudio/squircle-shape)
+* Latest version: ![Maven Central Version](https://img.shields.io/maven-central/v/com.composevisualeditor.apoloapps/squircle-shape)
 
 ```kotlin
 dependencies {
-    
-  
     implementation("com.composevisualeditor.apolostudio:squircle-shape-android:<version>")
-  
+
 }
 ```
 
@@ -90,7 +88,7 @@ squircle-shape = "<version>"
 [libraries]
 
 
-squircle-shape = { group = "com.composevisualeditor.apolostudio", name = "squircle-shape-android", version.ref = "squircle-shape" }
+squircle-shape = { group = "com.composevisualeditor.apoloapps", name = "squircle-shape-android", version.ref = "squircle-shape" }
 ```
 
 * Then include the dependency in your module `build.gradle.kts` file.
@@ -250,7 +248,7 @@ This project is open source and available under the [MIT License](./LICENSE).
 ```
 MIT License
 
-Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024 Apolo Apps
+Copyright (c) 2023 Stoyan Vuchev / Copyright (c) 2024-2025 Apolo Apps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -277,6 +275,7 @@ SOFTWARE.
 
 Created by [@stoyan-vuchev](https://github.com/stoyan-vuchev/) - feel free to contact me! <br/>
 E-mail - [contact@stoyanvuchev.com](mailto://contact@stoyanvuchev.com)
+<br/>
+Special thanks to [@stoyan-vuchev](https://github.com/stoyan-vuchev/)
 
-
-Forked by [@apolostudio](https://github.com/apolostudio/)
+Forked by [@ApoloApps](https://github.com/ApoloApps/)

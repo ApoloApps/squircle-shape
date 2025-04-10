@@ -8,7 +8,10 @@ on:
         type: string
       composeVersion:
         description: 'Compose Version'
-        type: string  
+        type: string
+      libraryVersion:
+          description: 'Library Version'
+          type: string
 
 jobs:
   deploy:
@@ -32,6 +35,13 @@ jobs:
           file: "gradle/libs.versions.toml"
           key: "versions.composePlugin"
           value: "${{ inputs.composeVersion }}"
+
+      - name: Edit TOML file Library Version
+        uses: rahulp959/toml-editor@v1.0.1
+        with:
+          file: "gradle/libs.versions.toml"
+          key: "versions.libraryVersion"
+          value: "${{ inputs.libraryVersion }}"
 
        
       - name: Setup JDK

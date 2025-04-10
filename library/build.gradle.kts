@@ -93,8 +93,8 @@ mavenPublishing {
 
     coordinates(
         groupId = "com.composevisualeditor.apoloapps",
-        artifactId = "squircle-shape",
-        version = libs.versions.composePlugin.get().replace("+", "-")
+        artifactId = "cve-squircle-shape",
+        version = libs.versions.libraryVersion.get()
     )
 
     pom {
@@ -132,10 +132,4 @@ mavenPublishing {
     // Enable GPG signing for all publications
     signAllPublications()
 
-}
-
-tasks.named("createStagingRepository") {
-    doFirst {
-        println("Hey, im publishing as Compose version ${libs.versions.composePlugin.get().replace("+", "-")}")
-    }
 }

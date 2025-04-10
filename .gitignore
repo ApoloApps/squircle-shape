@@ -12,3 +12,4 @@ gradle.properties
 .RestfulApiTool
 .RestfulApiTool/
 gradle.properties
+/.idea/

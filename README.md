@@ -74,7 +74,7 @@ sourceSets {
 
 ```kotlin
 dependencies {
-    implementation("com.composevisualeditor.apolostudio:squircle-shape-android:<version>")
+    implementation("com.composevisualeditor.apoloapps:cve-squircle-shape-android:<version>")
 
 }
 ```
@@ -88,7 +88,7 @@ squircle-shape = "<version>"
 [libraries]
 
 
-squircle-shape = { group = "com.composevisualeditor.apoloapps", name = "squircle-shape-android", version.ref = "squircle-shape" }
+squircle-shape = { group = "com.composevisualeditor.apoloapps", name = "cve-squircle-shape-android", version.ref = "squircle-shape" }
 ```
 
 * Then include the dependency in your module `build.gradle.kts` file.

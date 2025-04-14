@@ -15,7 +15,7 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev/")
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/bootstrap/")
         maven("https://repo.sellmair.io")
     }
 }
@@ -33,7 +33,7 @@ dependencyResolutionManagement {
         }
         maven("https://jitpack.io")
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev/")
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/bootstrap/")
         maven("https://repo.sellmair.io")
     }
 }

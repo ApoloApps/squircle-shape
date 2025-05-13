@@ -60,7 +60,7 @@ jobs:
       - name: Grant execute permission for Gradlew
         run: chmod +x gradlew
       - name: Upgrade Yarn
-        run: ./gradlew kotlinStoreYarnLock
+        run: ./gradlew kotlinUpgradeYarnLock
       - name: Build with Gradle
         run: ./gradlew build
 

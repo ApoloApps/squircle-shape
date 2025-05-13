@@ -59,12 +59,10 @@ jobs:
       # Make Gradle wrapper executable
       - name: Grant execute permission for Gradlew
         run: chmod +x gradlew
-        
-      - name: Build with Gradle
-        run: ./gradlew build
-
       - name: Upgrade Yarn
         run: ./gradlew kotlinStoreYarnLock
+      - name: Build with Gradle
+        run: ./gradlew build
 
       - name: Deploy to Sonatype
         run: ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache

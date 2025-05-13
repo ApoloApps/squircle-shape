@@ -63,6 +63,9 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: Upgrade Yarn
+        run: ./gradlew kotlinStoreYarnLock
+
       - name: Deploy to Sonatype
         run: ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache
         env:

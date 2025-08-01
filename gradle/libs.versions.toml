@@ -1,12 +1,12 @@
 [versions]
 
 # Plugins
-libraryVersion = "0.0.0-dev1"
-composePlugin = "1.8.0+dev1970"
-kotlin = "2.1.0"
-vanniktechMavenPublish = "0.30.0"
+libraryVersion = "0.0.0-dev19"
+composePlugin = "1.9.0+dev2724"
+kotlin = "2.2.20-Beta2"
+vanniktechMavenPublish = "0.34.0"
 
-agp = "8.2.2"
+agp = "8.11.1"
 test = "1.0.0"
 
 [libraries]

@@ -1,4 +1,3 @@
-import com.vanniktech.maven.publish.SonatypeHost
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 
 plugins {
@@ -66,7 +65,7 @@ kotlin {
 
 android {
 
-    compileSdk = 35
+    compileSdk = 36
     namespace = "com.composevisualeditor.apoloapps"
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -127,7 +126,7 @@ mavenPublishing {
     }
 
     // Configure publishing to Maven Central
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral(true)
 
     // Enable GPG signing for all publications
     signAllPublications()

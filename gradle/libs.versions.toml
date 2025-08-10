@@ -1,8 +1,8 @@
 [versions]
 
 # Plugins
-libraryVersion = "0.0.0-dev19"
-composePlugin = "1.9.0+dev2724"
+libraryVersion = "0.0.0-dev20"
+composePlugin = "1.9.10+dev2772"
 kotlin = "2.2.20-Beta2"
 vanniktechMavenPublish = "0.34.0"
 
